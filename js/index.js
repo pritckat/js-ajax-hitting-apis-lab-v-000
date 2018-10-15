@@ -46,3 +46,7 @@ function getRepositories() {
   xhr.send();
   return false;
 }
+
+function getCommits() {
+  
+}
