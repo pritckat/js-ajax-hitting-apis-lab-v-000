@@ -15,3 +15,11 @@ function displayBranches() {
   ).join('')}</ul>`;
   document.getElementById('details').innerHTML = branchesList;
 }
+
+function displayRepositories() {
+  const repos = JSON.parse(this.responseText);
+  const reposList = `<ul>${repos.map(
+    repo => '<li>' + repo.name + '</li>'
+  ).join('')}</ul>`;
+  document.getElementById('details').innerHTML = reposList;
+}
