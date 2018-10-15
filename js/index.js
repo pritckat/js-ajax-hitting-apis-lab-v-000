@@ -1,4 +1,5 @@
-// your code here
+const rootURL = 'https://api.github.com';
+
 function displayCommits() {
   const commits = JSON.parse(this.responseText);
   const commitsList = `<ul>${commits.map(
