@@ -21,5 +21,5 @@ function displayRepositories() {
   const reposList = `<ul>${repos.map(
     repo => '<li>' + repo.name + '</li>'
   ).join('')}</ul>`;
-  document.getElementById('details').innerHTML = reposList;
+  document.getElementById('repositories').innerHTML = reposList;
 }
