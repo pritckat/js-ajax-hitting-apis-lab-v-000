@@ -37,5 +37,5 @@ function displayRepositories() {
 }
 
 function getRepositories() {
-  
+
 }
