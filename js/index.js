@@ -47,6 +47,11 @@ function getRepositories() {
   return false;
 }
 
-function getCommits() {
-
+function getCommits(el) {
+  const name = el.dataset.repository
+  const uri = rootURL + '/repos/' + el.dataset.username + '/' + name +'/commits';
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener('load', displayCommits);
+  xhr.open('GET', uri);
+  xhr.send();
 }
