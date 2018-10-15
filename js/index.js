@@ -9,5 +9,5 @@ function displayCommits() {
 }
 
 function displayBranches() {
-  
+
 }
