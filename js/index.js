@@ -55,3 +55,12 @@ function getCommits(el) {
   xhr.open('GET', uri);
   xhr.send();
 }
+
+function getBranches(el) {
+  const name = el.dataset.repository;
+  const uri = rootURL + '/repos/' + el.dataset.username + '/' + name + '/branches';
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener('load', displayBranches);
+  xhr.open('GET', uri);
+  xhr.send();
+}
