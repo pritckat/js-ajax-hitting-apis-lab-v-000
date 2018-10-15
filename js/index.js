@@ -35,3 +35,7 @@ function displayRepositories() {
     '</ul>';
   document.getElementById('repositories').innerHTML = reposList;
 }
+
+function getRepositories() {
+  
+}
